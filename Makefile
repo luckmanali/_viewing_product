@@ -5,8 +5,8 @@ work_dir = ${HOME}/dev/itv/_viewing_product
 lint:
 	pylint --output-format-parseable --rcfile=pylint.rc src
 
-test:
-	pytest test
+test_src:
+	pytest -v test
 
 build:
 	cd ${work_dir}
